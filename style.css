@@ -53,6 +53,7 @@ h3 {
 h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
+  color: #6cd4ff;
 }
 a {
   font-family: Arial, Helvetica, sans-serif;
@@ -77,6 +78,10 @@ a {
 .kort {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 50px;
+}
+img {
+  width: 500px;
 }
 
 /*kategori*/
