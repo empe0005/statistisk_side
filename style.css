@@ -1,0 +1,44 @@
+html {
+  --color1: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  background-color: var(--color1);
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-align: end;
+}
+
+/* produkt*/
+.kort {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
