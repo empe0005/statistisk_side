@@ -39,16 +39,22 @@ nav {
   text-decoration: none;
   text-align: end;
 }
+.menu a:hover {
+  color: #6cd4ff;
+  transition: color 0.3s;
+}
 /*general*/
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
+  text-align: center;
 }
 h2 {
   font-family: "Montserrat", sans-serif;
 }
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  text-align: center;
 }
 h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -60,11 +66,11 @@ a {
   text-decoration: none;
   color: #2f243a;
 }
-.menu a:hover {
-  color: #6cd4ff;
-  transition: color 0.3s;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 65ch;
+  padding: 10px;
 }
-
 /*index*/
 .forside {
   font-family: Arial, Helvetica, sans-serif;
@@ -74,11 +80,15 @@ a {
   font-size: 2rem;
   color: black;
 }
+.forside:hover {
+  color: #ff729f;
+}
 /* produkt*/
 .kort {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 50px;
+  margin: 100px;
+  justify-content: center;
 }
 img {
   width: 500px;
@@ -89,7 +99,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  margin: 50px;
+  margin: 6rem;
+  padding-top: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .button {
   padding: 2rem;
@@ -97,4 +110,27 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: x-large;
   text-align: center;
+  height: 12rem;
+  align-content: center;
+}
+
+/*produktliste*/
+.liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+  place-items: center;
+  gap: 30px;
+}
+.liste img {
+  width: 300px;
+}
+.item {
+  display: grid;
+  justify-content: center;
+}
+.item a:hover {
+  color: #ff729f;
+  transition: color 0.2s;
 }
