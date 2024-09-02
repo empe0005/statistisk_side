@@ -226,7 +226,21 @@ span {
 .item.onSale .price {
   text-align: start;
 }
-.discount {
+.item.onSale .discount {
   background-color: #ff729f;
   text-align: center;
+}
+
+.soldOut a {
+  opacity: 0.5;
+}
+.liste article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  color: #ff729f;
+  padding-left: 3rem;
+  padding-top: 8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
