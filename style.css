@@ -68,7 +68,6 @@ a {
   color: #2f243a;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
   max-width: 65ch;
 }
 label {
@@ -171,6 +170,7 @@ select {
   margin-right: 200px;
   place-items: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 .liste img {
   width: 300px;
@@ -178,13 +178,55 @@ select {
 .item {
   display: grid;
   justify-content: center;
+  text-align: center;
+}
+.item a {
+  margin-top: 20px;
+  text-decoration: underline;
 }
 .item a:hover {
   color: #ff729f;
   transition: color 0.2s;
 }
-
-.item h4,
-a {
+.subtle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #6cd4ff;
+  margin: 0;
+  text-align: center;
+}
+.sale {
+  display: none;
+  margin: 0;
+}
+.sale p {
+  margin: 0;
+}
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+span {
+  display: none;
+}
+.item.onSale .sale {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+.item.onSale span {
+  display: inline;
+}
+.item.onSale .price {
+  text-align: start;
+}
+.discount {
+  background-color: #ff729f;
   text-align: center;
 }
