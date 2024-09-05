@@ -15,5 +15,10 @@ function visProdukt(product) {
   document.querySelector("h4").textContent = product.articletype + " | " + product.category;
   document.querySelector("h3").textContent = product.price + " DKK";
   document.querySelector("p").textContent = "Made in " + product.productionyear;
+  if (product.discount) {
+    document.querySelector(".text").classList.add("onSale");
+    document.querySelector(".sale .rabat").textContent = "DKK " + Math.round(product.price - (product.price * product.discount) / 100);
+    document.querySelector(".sale .discount").textContent = "-" + product.discount + "%";
+  }
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
 }

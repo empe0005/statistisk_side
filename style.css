@@ -122,14 +122,32 @@ img {
   width: 400px;
 }
 .text {
-  padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
+  line-height: 1;
+}
+.text h3 {
+  text-align: start;
 }
 
+.text.onSale .sale {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.text.onSale .price {
+  text-align: start;
+  text-decoration: line-through;
+}
+.text.onSale .discount {
+  background-color: #ff729f;
+  text-align: center;
+}
 .buyButton {
   border: solid #ff729f 1px;
-  padding: 10px;
+  padding: 15px;
   color: #ff729f;
   position: absolute;
   margin-top: 1rem;
@@ -142,9 +160,11 @@ img {
 }
 
 select {
-  background-color: white;
-  border: solid 0.5px #2f243a;
-  width: 50px;
+  background-color: #ff729f;
+  border: solid 0.5px #ff729f;
+  border-radius: 10%;
+  width: 70px;
+  height: 25px;
   display: inline;
 }
 /*kategori*/
